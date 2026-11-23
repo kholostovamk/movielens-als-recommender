@@ -6,7 +6,7 @@
 %=====================================================================
 \subsection*{Question 2 ALS from scratch}
 %=====================================================================
-\textit{Owner Aarav Jain (checks and write-up; the code in \texttt{src/methods.py} was written by Margarita Kholostova). Checked by Madhu Vadhani Madasamy and Margarita Kholostova.}
+\textit{Owner Aarav Jain (checks and write-up; the code in \texttt{src/methods.py} was written by Margarita Kholostova). Checked by Margarita Kholostova.}
 
 \textbf{What we built.} Our ALS uses no library solver. Every small system is solved by our own Gaussian elimination, and there is one function for each step of the algorithm in the Iteration 2 report (Table~\ref{tab:functions}). The same functions run the small example, the simulation and the real data.
 
@@ -63,7 +63,7 @@ Whole run: largest $|UV^\top - U_{\text{lib}}V_{\text{lib}}^\top|$ & $7.1\times1
 %=====================================================================
 \subsection*{Question 5 The objective after every step}
 %=====================================================================
-\textit{Owner Aarav Jain. Checked by Madhu Vadhani Madasamy.}
+\textit{Owner Aarav Jain. Checked by Margarita Kholostova.}
 
 \textbf{What we check.} Iteration 2, Question 4 says that $J$ cannot go up after the user update and cannot go up after the movie update, because each one minimizes $J$ exactly over one block with the other block fixed. So we record $J$ after every half step, not only after every full step: $J_0$, then $J$ after the first user update, then after the first movie update, and so on, 101 values for 50 steps (Figure~\ref{fig:objective}, Table~\ref{tab:q5}).
 
